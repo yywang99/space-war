@@ -1,7 +1,9 @@
-This is a space war game ,
 
-develop with python/pygame ,
+  
+#  Space war game 
 
-by visual studio Code and gemini assistant,
+##  develop with python/pygame ,
 
-YY wang at 2025/08/25
+##  by VS Code and gemini assistant,
+
+ YY wang at 2025/08/25 
