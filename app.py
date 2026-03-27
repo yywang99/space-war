@@ -128,6 +128,8 @@ class Player(pygame.sprite.Sprite):
             self.lives_image = pygame.transform.scale(self.image, (25, 20))
 
         self.rect = self.image.get_rect()
+        self.mask = pygame.mask.from_surface(self.image)
+        self.mask = pygame.mask.from_surface(self.image)
         self.rect.centerx = SCREEN_WIDTH // 2
         self.rect.bottom = SCREEN_HEIGHT - 10
 
@@ -222,6 +224,8 @@ class Asteroid(pygame.sprite.Sprite):
             old_center = self.rect.center
             self.image = new_image
             self.rect = self.image.get_rect(center=old_center)
+            self.mask = pygame.mask.from_surface(self.image)
+            self.mask = pygame.mask.from_surface(self.image)
 
     def update(self):
         """向下移動並旋轉隕石"""
