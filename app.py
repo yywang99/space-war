@@ -31,6 +31,7 @@ SCORE_FILE = "scores.txt"
 MAX_SCORES = 5 # 只顯示前 5 名
 MAX_NAME_LENGTH = 8 # 玩家姓名最大長度
 
+LIVES_ICON_SPACING = 30 # 生命值圖示間距
 # 遊戲狀態
 STATE_MENU = 0
 STATE_PLAYING = 1
@@ -68,7 +69,7 @@ def draw_lives(surf, x, y, lives, img):
     """在畫面上繪製生命值"""
     for i in range(lives):
         img_rect = img.get_rect()
-        img_rect.x = x + 30 * i
+        img_rect.x = x + LIVES_ICON_SPACING * i
         img_rect.y = y
         surf.blit(img, img_rect)
 
